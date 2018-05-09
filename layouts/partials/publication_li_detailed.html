@@ -12,7 +12,7 @@
       {{ if $img_src.Scheme }}
         <img src="{{ .Scratch.Get "image" }}" class="article-banner" itemprop="image">
       {{ else }}
-        <img src="{{ "/img/" | relURL }}{{ .Scratch.Get "image" }}" class="article-banner" itemprop="image">
+        <img src="{{ "" | relURL }}{{ .Scratch.Get "image" }}" class="article-banner" itemprop="image">
       {{ end }}
     </a>
   </div>
